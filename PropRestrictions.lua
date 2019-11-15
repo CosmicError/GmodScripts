@@ -1,4 +1,5 @@
--- DO NOT CHANGE HOOKS UNLESS YOU KNOW WHAT YOU ARE DOING
+-- make a file in garrysmod/lua/autorun/server
+
 local hooks = {
     "Effect",
     "NPC",
