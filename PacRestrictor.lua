@@ -1,3 +1,5 @@
+-- make a file in garrysmod/lua/autorun/server
+
 -- Change the ranks in "pacranks" to the ranks you want to allow to have acces to the pac editor
 local pacranks = {
 	["moderators"] = true,
