@@ -13,9 +13,17 @@ local pacranks = {
 
 hook.Add("PrePACConfigApply", "PACRankRestrict", function(ply)
 	if not pacranks[ply:GetUserGroup()] then
-        return false
-    end
+		return false
+   	end
 end)
+
+hook.Add( "PrePACEditorOpen", "PACRankRestrictOpen", function( ply )
+	if not pacranks[ply:GetUserGroup()] then
+		return false
+   	end
+end )
+
+
 
 -- // STEAMID3 VERSION //
 local allowid = {
@@ -24,6 +32,6 @@ local allowid = {
 
 hook.Add("PrePACConfigApply", "PACRankRestrict", function(ply)
 	if not allowid[ply:AccountID()] then
-        return false
-    end
+        	return false
+	end
 end)
