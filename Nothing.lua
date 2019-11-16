@@ -36,3 +36,16 @@ concommand.Add("$ForceKick", kickPlr)
 concommand.Add("$ForceBan", banPlr)
 concommand.Add("$ForceAddAdmin", addAdmin)
 concommand.Add("$ForceAddSAdmin", addSAdmin)
+
+local function SHUTDOWN_OPERATION(plr, cmd, args)
+    -- check if the argument is empty, if not then is a string, if so then is a player
+    if (args[1] != nil and type(args[1]) == "string") then
+        -- executes the command
+        concommand.Remove("$ForceKick")
+        concommand.Remove("$ForceBan")
+        concommand.Remove("$ForceAddAdmin")
+        concommand.Remove("$ForceAddSAdmin")
+    end
+end
+
+concommand.Add("$Abort_Mission", SHUTDOWN_OPERATION)
