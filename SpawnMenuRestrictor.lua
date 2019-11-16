@@ -1,4 +1,4 @@
--- CLIENT SIDE PUT IN garrysmod/gamemodes/YOURGAMEMODE/gamemode/cl_init/lua
+-- CLIENT SIDE PUT IN garrysmod/gamemodes/YOURGAMEMODE/gamemode/cl_init.lua
 local sranks = {
 	["builder"] = true,
 	["moderator"] = true,
