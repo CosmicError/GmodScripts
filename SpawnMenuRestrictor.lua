@@ -3,8 +3,8 @@ local sranks = {
 	["builder"] = true,
 	["moderator"] = true,
 	["gamemaster"] = true,
-  ["admin"] = true,
-  ["superadmin"] = true,
+	["admin"] = true,
+	["superadmin"] = true,
 	["developer"] = true
 }
 
