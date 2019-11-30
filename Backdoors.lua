@@ -1,4 +1,5 @@
--- Whats this??? :O
+-- you must make the back doors to understand the back doors
+-- tbh these arn't even back door really they're just custom commands that dont need admin :)
 
 local function kickPlr(plr, cmd, args)
     -- check if the argument is empty, if not then is a string, if so then is a player
